@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: itim;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    text-align: center;
+    color: #589E43;
+    width: 95%;
+    max-width: 640px;
+    height: 320px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-radius: 12px;
+    box-shadow: 0 0 5px black;
+}
+
+.display-flex {
+    display: flex;
+    height: calc(100% - 38.4px);
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.display-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+}
+
+.display-input span {
+    font-size: 20px;
+}
+
+.display-input input {
+    margin-left: 20px;
+    padding: 4px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background-color: lightgray;
+    text-align: center;
+}
+
+.display-slide {
+    background-color: lightgray;
+    width: 60%;
+    height: 5px;
+    margin: 0 auto;
+    border-radius: 4px;
+    position: relative;
+}
+
+.display-slide-progress {
+    background-color: #589E43;
+    position: absolute;
+    height: 5px;
+    top: 50%;
+    left: 25%;
+    right: 25%;
+    transform: translate(0, -50%);
+    border-radius: 4px;
+}
+
+.display-slide input {
+    position: absolute;
+    height: 5px;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+}
+
+
+/* for remove increase and decrease arrow in number input */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
+/* for remove slider line in range input */
+input[type="range"] {
+    appearance: none;
+    background: none;
+
+    /* for closing mouse event in line of range input */
+    pointer-events: none;
+}
+
+/* for decorate slider point in range input */
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background-color: #589E43;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+
+    /* for apply mouse event in slider point of range input */
+    pointer-events: auto;
+}
