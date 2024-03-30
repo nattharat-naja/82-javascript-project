@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: itim;
+}
+
+th,
+td {
+    padding: 4px 8px;
+}
+
+.container {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#export-button {
+    color: white;
+    background-color: #589E43;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 4px;
+    border: none;
+    padding: 8px 12px;
+    margin-top: 24px;
+    cursor: pointer;
+
+    &:hover {
+        scale: 1.1;
+        transition: .3s;
+    }
+
+    &:active {
+        background-color: #39662b;
+        transition: 0s;
+    }
+}

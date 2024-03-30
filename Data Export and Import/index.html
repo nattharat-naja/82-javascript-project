@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Data Export and Import | project</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="container">
+
+            <!-- import file -->
+            <input id="import-data" accept=".csv" type="file">
+
+            <!-- imported table -->
+            <table id="imported-table" border="1">
+                <thead id="imported-table-head"></thead>
+                <tbody id="imported-table-body"></tbody>
+            </table>
+
+            <!-- export button -->
+            <button id="export-button">Export Data</button>
+            
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
