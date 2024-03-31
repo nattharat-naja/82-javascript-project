@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>GitHub Profile Search | project</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="container">
+            <h1>GitHub Profile Search</h1>
+
+            <!-- Searching user -->
+            <form id="form">
+                <input
+                    type="text"
+                    name="user"
+                    placeholder="Search a GitHub user"
+                    autocomplete="off"
+                    required
+                />
+            </form>
+
+            <!-- User information -->
+            <div class="user-container">
+                <div id="user-img"></div>
+                <div class="user-info-container">
+                    <div>
+                        <h3 id="user-name"></h3>
+                        <p id="user-bio"></p>
+                    </div>
+                    <div class="user-info-public-container">
+                        <p id="user-following-amount"></p>
+                        <p id="user-followers-amount"></p>
+                        <p id="user-repos-amount"></p>
+                    </div>
+                    <div id="user-repo-cards"></div>
+                </div>
+            </div>
+
+            <!-- User not found -->
+            <div class="user-not-found">
+                <h3>User Not Found</h3>
+            </div>
+            
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
